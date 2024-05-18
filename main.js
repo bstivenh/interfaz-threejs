@@ -18,7 +18,9 @@ const geometry6 = new THREE.BoxGeometry(3, 1, 0);
 const geometry7 = new THREE.BoxGeometry(1, 4.39, 0);
 const geometry8 = new THREE.BoxGeometry(1.5, 1, 0);
 const geometry9 = new THREE.BoxGeometry(1, 3, 0);
-const geometry10 = new THREE.BoxGeometry(2, 0.9, 0);
+const geometry9_1 = new THREE.BoxGeometry(1, 3, 0);
+const geometry9_2 = new THREE.BoxGeometry(1.1, 1.9, 0);
+const geometry10 = new THREE.BoxGeometry(4.7, 0.9, 0);
 const geometry11 = new THREE.BoxGeometry(22.3, 1, 0);
 const geometry30 = new THREE.BoxGeometry(1.4, 1.5, 0);
 const geometry31 = new THREE.BoxGeometry(3, 2.2, 0);
@@ -47,9 +49,10 @@ const cube14 = new THREE.Mesh(geometry7, material2);
 const cube15 = new THREE.Mesh(geometry8, material2);
 const cube16 = new THREE.Mesh(geometry9, material2);
 const cube17 = new THREE.Mesh(geometry6, material2);
-const cube18 = new THREE.Mesh(geometry9, material2);
+const cube18 = new THREE.Mesh(geometry9_1, material2);
 const cube19 = new THREE.Mesh(geometry10, material2);
 const cube20 = new THREE.Mesh(geometry11, material2);
+const cube21 = new THREE.Mesh(geometry9_2, material2);
 const cube30 = new THREE.Mesh(geometry30, material2);
 const cube31 = new THREE.Mesh(geometry31, material2);
 const cube32 = new THREE.Mesh(geometry32, material2);
@@ -57,7 +60,7 @@ const cube33 = new THREE.Mesh(geometry33, material2);
 const cube34 = new THREE.Mesh(geometry34, material2);
 const cube35 = new THREE.Mesh(geometry35, material2);
 
-scene.add(cube, cube2, cube3, cube4, cube5, cube6, cube7, cube8, cube9, cube10, cube11, cube12, cube13, cube14, cube15, cube16, cube17, cube18, cube19, cube20, cube30, cube31, cube32, cube33, cube34, cube35);
+scene.add(cube, cube2, cube3, cube4, cube5, cube6, cube7, cube8, cube9, cube10, cube11, cube12, cube13, cube14, cube15, cube16, cube17, cube18, cube19, cube20, cube21, cube30, cube31, cube32, cube33, cube34, cube35);
 
 camera.position.z = 5;
 
@@ -116,6 +119,9 @@ cube16.position.x = 6.9;
 
 cube18.position.y = -1.2;
 cube18.position.x = 5.8;
+
+cube21.position.y = -1.65;
+cube21.position.x = 4.6;
 
 cube20.position.y = 3.2;
 cube20.position.x = -5.95;
