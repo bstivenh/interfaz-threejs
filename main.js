@@ -15,9 +15,11 @@ const geometry3 = new THREE.BoxGeometry(13, 1, 0);
 const geometry4 = new THREE.BoxGeometry(1, 10, 0);
 const geometry5 = new THREE.BoxGeometry(1, 3, 0);
 const geometry6 = new THREE.BoxGeometry(3, 1, 0);
-const geometry7 = new THREE.BoxGeometry(1, 4.3, 0);
-const geometry8 = new THREE.BoxGeometry(2, 1, 0);
-const geometry9 = new THREE.BoxGeometry(22.3, 1.1, 0);
+const geometry7 = new THREE.BoxGeometry(1, 4.39, 0);
+const geometry8 = new THREE.BoxGeometry(1.5, 1, 0);
+const geometry9 = new THREE.BoxGeometry(1, 3, 0);
+const geometry10 = new THREE.BoxGeometry(3, 0.94, 0);
+const geometry11 = new THREE.BoxGeometry(22.3, 1.1, 0);
 
 const material = new THREE.MeshBasicMaterial({ color: 0x3D85C6 });
 const material2 = new THREE.MeshBasicMaterial({ color: 0xcccccc });
@@ -38,8 +40,12 @@ const cube13 = new THREE.Mesh(geometry6, material2);
 const cube14 = new THREE.Mesh(geometry7, material2);
 const cube15 = new THREE.Mesh(geometry8, material2);
 const cube16 = new THREE.Mesh(geometry9, material2);
+const cube17 = new THREE.Mesh(geometry6, material2);
+const cube18 = new THREE.Mesh(geometry9, material2);
+const cube19 = new THREE.Mesh(geometry10, material2);
+const cube20 = new THREE.Mesh(geometry11, material2);
 
-scene.add(cube, cube2, cube3, cube4, cube5, cube6, cube7, cube8, cube9, cube10, cube11, cube12, cube13, cube14, cube15, cube16);
+scene.add(cube, cube2, cube3, cube4, cube5, cube6, cube7, cube8, cube9, cube10, cube11, cube12, cube13, cube14, cube15, cube16, cube17, cube18, cube19, cube20);
 
 camera.position.z = 5;
 
@@ -82,21 +88,38 @@ cube11.position.y = -2.5;
 cube11.position.x = 1;
 
 
+
 // Cubos que referencian los caminos 
+
+
+// Caminos horizontales 
 cube12.position.y = 3;
 cube12.position.x = 5.8;
-
-cube13.position.y = 2;
-cube13.position.x = 4.5;
 
 cube14.position.y = 1.6;
 cube14.position.x = 6.9;
 
+cube16.position.y = -2.2;
+cube16.position.x = 6.9;
+
+cube18.position.y = -1.2;
+cube18.position.x = 5.8;
+
+// caminos Verticales
+cube13.position.y = 2;
+cube13.position.x = 4.5;
+
 cube15.position.y = 0.9;
 cube15.position.x = 6;
 
-cube16.position.y = 3.2;
-cube16.position.x = -6;
+cube17.position.y = -3.2;
+cube17.position.x = 4.9;
+
+cube19.position.y = -0.12;
+cube19.position.x = 5;
+
+cube20.position.y = 3.2;
+cube20.position.x = -6;
 
 function animate() {
     // cube.rotation.x += 0.01;
