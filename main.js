@@ -28,6 +28,9 @@ const geometry32 = new THREE.BoxGeometry(1.5, 3, 0);
 const geometry33 = new THREE.BoxGeometry(3, 1, 0);
 const geometry34 = new THREE.BoxGeometry(5, 1, 0);
 const geometry35 = new THREE.BoxGeometry(5, 1.3, 0);
+const geometry36 = new THREE.BoxGeometry(1.2, 3.5, 0);
+const geometry37 = new THREE.BoxGeometry(1.2, 2.5, 0);
+const geometry38 = new THREE.BoxGeometry(9.5, 1, 0);
 
 const material = new THREE.MeshBasicMaterial({ color: 0x3D85C6 });
 const material2 = new THREE.MeshBasicMaterial({ color: 0xcccccc });
@@ -59,8 +62,11 @@ const cube32 = new THREE.Mesh(geometry32, material2);
 const cube33 = new THREE.Mesh(geometry33, material2);
 const cube34 = new THREE.Mesh(geometry34, material2);
 const cube35 = new THREE.Mesh(geometry35, material2);
+const cube36 = new THREE.Mesh(geometry36, material2);
+const cube37 = new THREE.Mesh(geometry37, material2);
+const cube38 = new THREE.Mesh(geometry38, material2);
 
-scene.add(cube, cube2, cube3, cube4, cube5, cube6, cube7, cube8, cube9, cube10, cube11, cube12, cube13, cube14, cube15, cube16, cube17, cube18, cube19, cube20, cube21, cube30, cube31, cube32, cube33, cube34, cube35);
+scene.add(cube, cube2, cube3, cube4, cube5, cube6, cube7, cube8, cube9, cube10, cube11, cube12, cube13, cube14, cube15, cube16, cube17, cube18, cube19, cube20, cube21, cube30, cube31, cube32, cube33, cube34, cube35, cube36, cube37, cube38);
 
 camera.position.z = 5;
 
@@ -132,6 +138,9 @@ cube34.position.x = -4;
 cube35.position.y = 1.86;
 cube35.position.x = -2;
 
+cube38.position.y = -0.55;
+cube38.position.x = -1;
+
 // caminos Verticales
 cube13.position.y = 2;
 cube13.position.x = 4.5;
@@ -156,6 +165,12 @@ cube32.position.x = 2.8;
 
 cube33.position.y = 0.8;
 cube33.position.x = 3.6;
+
+cube36.position.y = -1.8;
+cube36.position.x = -5.4;
+
+cube37.position.y = -2.6;
+cube37.position.x = -3.4;
 
 function animate() {
     // cube.rotation.x += 0.01;
