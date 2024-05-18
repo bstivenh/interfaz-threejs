@@ -18,8 +18,14 @@ const geometry6 = new THREE.BoxGeometry(3, 1, 0);
 const geometry7 = new THREE.BoxGeometry(1, 4.39, 0);
 const geometry8 = new THREE.BoxGeometry(1.5, 1, 0);
 const geometry9 = new THREE.BoxGeometry(1, 3, 0);
-const geometry10 = new THREE.BoxGeometry(3, 0.94, 0);
-const geometry11 = new THREE.BoxGeometry(22.3, 1.1, 0);
+const geometry11 = new THREE.BoxGeometry(22.3, 1, 0);
+const geometry10 = new THREE.BoxGeometry(2, 0.9, 0);
+
+
+
+
+
+
 
 const material = new THREE.MeshBasicMaterial({ color: 0x3D85C6 });
 const material2 = new THREE.MeshBasicMaterial({ color: 0xcccccc });
@@ -115,11 +121,11 @@ cube15.position.x = 6;
 cube17.position.y = -3.2;
 cube17.position.x = 4.9;
 
-cube19.position.y = -0.12;
-cube19.position.x = 5;
+cube19.position.y = -0.15;
+cube19.position.x = 6.4;
 
 cube20.position.y = 3.2;
-cube20.position.x = -6;
+cube20.position.x = -5.95;
 
 function animate() {
     // cube.rotation.x += 0.01;
