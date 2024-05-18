@@ -22,7 +22,7 @@ const geometry9_1 = new THREE.BoxGeometry(1, 3, 0);
 const geometry9_2 = new THREE.BoxGeometry(1.1, 1.9, 0);
 const geometry10 = new THREE.BoxGeometry(4.7, 0.9, 0);
 const geometry11 = new THREE.BoxGeometry(22.3, 1, 0);
-const geometry30 = new THREE.BoxGeometry(3, 2, 0);
+const geometry30 = new THREE.BoxGeometry(1.4, 1.5, 0);
 const geometry31 = new THREE.BoxGeometry(1.5, 3, 0);
 const geometry33 = new THREE.BoxGeometry(3, 1, 0);
 
@@ -118,6 +118,9 @@ cube18.position.x = 5.8;
 cube21.position.y = -1.65;
 cube21.position.x = 4.6;
 
+cube20.position.y = 3.2;
+cube20.position.x = -5.95;
+
 // caminos Verticales
 cube13.position.y = 2;
 cube13.position.x = 4.5;
@@ -131,11 +134,8 @@ cube17.position.x = 4.9;
 cube19.position.y = -0.15;
 cube19.position.x = 6.4;
 
-cube20.position.y = 3.2;
-cube20.position.x = -5.95;
-
-cube30.position.y = 2;
-cube30.position.x = -6;
+cube30.position.y = 2.25;
+cube30.position.x = -5.5;
 
 cube31.position.y = 1;
 cube31.position.x = 0;
