@@ -15,8 +15,8 @@ const geometry = new THREE.BoxGeometry(0, 10, 1);
 const geometry2 = new THREE.BoxGeometry(13, 1, 0);
 const geometry3 = new THREE.BoxGeometry(13, 1, 0);
 const geometry4 = new THREE.BoxGeometry(1, 10, 0);
-const geometry5 = new THREE.BoxGeometry(1, 9, 0);
-const geometry6 = new THREE.BoxGeometry(1, 9, 0);
+const geometry5 = new THREE.BoxGeometry(1, 3, 0);
+const geometry6 = new THREE.BoxGeometry(3, 1, 0);
 
 
 
@@ -49,7 +49,7 @@ const cube13 = new THREE.Mesh(geometry6, material2);
 
 
 
-scene.add(cube, cube2, cube3, cube4, cube5, cube6, cube7, cube8, cube9, cube10, cube11);
+scene.add(cube, cube2, cube3, cube4, cube5, cube6, cube7, cube8, cube9, cube10, cube11, cube12, cube13);
 
 camera.position.z = 5;
 
@@ -91,6 +91,13 @@ cube10.position.x = 1;
 cube11.position.y = -2.5;
 cube11.position.x = 1;
 
+
+// Cubos que referencian los caminos 
+cube12.position.y = 3;
+cube12.position.x = 6;
+
+cube13.position.y = 2;
+cube13.position.x = 5;
 
 function animate() {
     // cube.rotation.x += 0.01;
