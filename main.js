@@ -15,16 +15,18 @@ const geometry3 = new THREE.BoxGeometry(13, 1, 0);
 const geometry4 = new THREE.BoxGeometry(1, 10, 0);
 const geometry5 = new THREE.BoxGeometry(1, 3, 0);
 const geometry6 = new THREE.BoxGeometry(3, 1, 0);
+const geometry6_1 = new THREE.BoxGeometry(4.5, 1, 0);
+const geometry6_2 = new THREE.BoxGeometry(8, 1, 0);
 const geometry7 = new THREE.BoxGeometry(1, 4.39, 0);
 const geometry8 = new THREE.BoxGeometry(1.5, 1, 0);
 const geometry9 = new THREE.BoxGeometry(1, 3, 0);
 const geometry9_1 = new THREE.BoxGeometry(1, 3, 0);
 const geometry9_2 = new THREE.BoxGeometry(1.1, 1.9, 0);
-const geometry10 = new THREE.BoxGeometry(4.7, 0.9, 0);
+const geometry9_3 = new THREE.BoxGeometry(1.1, 3.9, 0);
+const geometry10 = new THREE.BoxGeometry(2.7, 0.9, 0);
 const geometry11 = new THREE.BoxGeometry(22.3, 1, 0);
 const geometry30 = new THREE.BoxGeometry(1.4, 1.5, 0);
-const geometry31 = new THREE.BoxGeometry(3, 2.2, 0);
-const geometry32 = new THREE.BoxGeometry(1.5, 3, 0);
+const geometry31 = new THREE.BoxGeometry(1.5, 3, 0);
 const geometry33 = new THREE.BoxGeometry(3, 1, 0);
 const geometry34 = new THREE.BoxGeometry(5, 1, 0);
 const geometry35 = new THREE.BoxGeometry(5, 1.3, 0);
@@ -53,14 +55,16 @@ const cube13 = new THREE.Mesh(geometry6, material2);
 const cube14 = new THREE.Mesh(geometry7, material2);
 const cube15 = new THREE.Mesh(geometry8, material2);
 const cube16 = new THREE.Mesh(geometry9, material2);
-const cube17 = new THREE.Mesh(geometry6, material2);
+const cube17 = new THREE.Mesh(geometry6_1, material2);
 const cube18 = new THREE.Mesh(geometry9_1, material2);
 const cube19 = new THREE.Mesh(geometry10, material2);
 const cube20 = new THREE.Mesh(geometry11, material2);
 const cube21 = new THREE.Mesh(geometry9_2, material2);
+const cube22 = new THREE.Mesh(geometry9_3, material2);
+const cube23 = new THREE.Mesh(geometry6_2, material2);
 const cube30 = new THREE.Mesh(geometry30, material2);
 const cube31 = new THREE.Mesh(geometry31, material2);
-const cube32 = new THREE.Mesh(geometry32, material2);
+const cube32 = new THREE.Mesh(geometry31, material2);
 const cube33 = new THREE.Mesh(geometry33, material2);
 const cube34 = new THREE.Mesh(geometry34, material2);
 const cube35 = new THREE.Mesh(geometry35, material2);
@@ -70,7 +74,7 @@ const cube38 = new THREE.Mesh(geometry38, material2);
 const cube39 = new THREE.Mesh(geometry39, material2);
 const cube40 = new THREE.Mesh(geometry40, material2);
 
-scene.add(cube, cube2, cube3, cube4, cube5, cube6, cube7, cube8, cube9, cube10, cube11, cube12, cube13, cube14, cube15, cube16, cube17, cube18, cube19, cube20, cube21, cube30, cube31, cube32, cube33, cube34, cube35, cube36, cube37, cube38, cube39, cube40);
+scene.add(cube, cube2, cube3, cube4, cube5, cube6, cube7, cube8, cube9, cube10, cube11, cube12, cube13, cube14, cube15, cube16, cube17, cube18, cube19, cube20, cube21,cube22,cube23, cube30, cube31, cube32, cube33, cube34, cube35, cube36, cube37, cube38, cube39, cube40);
 
 camera.position.z = 5;
 
@@ -89,7 +93,6 @@ cube2.position.x = 0;
 
 cube3.position.y = -3.5;
 cube3.position.x = 0;
-
 
 cube5.position.y = 2.5;
 cube5.position.x = 0;
@@ -136,11 +139,11 @@ cube21.position.x = 4.6;
 cube20.position.y = 3.2;
 cube20.position.x = -5.95;
 
-cube34.position.y = 0.8;
-cube34.position.x = -4;
+cube22.position.y = -1.75;
+cube22.position.x = 3.4;
 
-cube35.position.y = 1.86;
-cube35.position.x = -2;
+cube23.position.y = 0;
+cube23.position.x = 0;
 
 cube38.position.y = -0.55;
 cube38.position.x = -1;
@@ -159,16 +162,19 @@ cube15.position.y = 0.9;
 cube15.position.x = 6;
 
 cube17.position.y = -3.2;
-cube17.position.x = 4.9;
+cube17.position.x = 4.2;
 
 cube19.position.y = -0.15;
-cube19.position.x = 6.4;
+cube19.position.x = 5.4;
+
+cube23.position.y = -5;
+cube23.position.x = -4.5;
 
 cube30.position.y = 2.25;
 cube30.position.x = -5.5;
 
-cube31.position.y = 1.4;
-cube31.position.x = 0.3;
+cube31.position.y = 1;
+cube31.position.x = 0;
 
 cube32.position.y = 1.8;
 cube32.position.x = 2.8;
